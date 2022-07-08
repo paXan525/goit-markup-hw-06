@@ -623,12 +623,12 @@ p {
   text-transform: uppercase;
 }
 
-.footer .form {
+.footer-form {
   display: flex;
   width: 570px;
 }
 
-.form-inpat {
+.footer-form-inpat {
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -645,11 +645,11 @@ p {
   border-radius: 4px;
 }
 
-.form-inpat::placeholder {
+.footer-form-inpat::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form .subscribe-button {
+.footer-subscribe-button {
   display: flex;
   align-items: center;
   height: 50px;
@@ -668,7 +668,7 @@ p {
   cursor: pointer;
 }
 
-.subscribe-icon {
+.footer-subscribe-icon {
   margin-left: 10px;
   fill: currentColor;
 }
@@ -746,7 +746,6 @@ p {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(calc(100% + 1px));
-  /* opacity: 0; */
   transition: transform var(--transition), opacity var(--transition);
 }
 
@@ -755,19 +754,12 @@ p {
   top: 50%;
   left: 50%;
 
-  /* opacity: 0; */
   transform: translate(-50%, -50%);
 }
-
-/* .portfolio-link:hover .product-description,
-.portfolio-link:focus .product-description {
-  opacity: 1;
-} */
 
 .portfolio-link:hover .product-overlay,
 .portfolio-link:focus .product-overlay {
   transform: translateY(0);
-  /* opacity: 1; */
 }
 
 .description-text {
@@ -801,6 +793,8 @@ p {
   color: var(--primary-text-color);
 }
 
+/* Модальне вікно */
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -831,6 +825,7 @@ p {
 
   width: 528px;
   height: 581px;
+  padding: 40px;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -843,9 +838,6 @@ p {
 
 .modal .form {
   width: 448px;
-  margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .form-title {
@@ -905,6 +897,7 @@ p {
 .form-input:hover,
 .form-input:focus {
   border-color: #2196f3;
+  outline: none;
 }
 
 .form-icon {
@@ -935,6 +928,7 @@ p {
 .form-textarea-input:hover,
 .form-textarea-input:focus {
   border-color: #2196f3;
+  outline: none;
 }
 
 .form-textarea-input::placeholder {
